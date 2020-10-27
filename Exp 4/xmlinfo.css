@@ -1,0 +1,26 @@
+ heading { 
+      display:block; 
+      font-weight:bolder; 
+      text-align:center; 
+      font-size:30px; 
+      background-color: green; 
+      color: white; 
+    
+} 
+CD {
+	background-color: powderblue;
+	border: 2px solid black;
+	display: block;
+	margin-bottom: 10px;
+}
+
+TITLE,COUNTRY,COMPANY,COMMENT{ 
+     display : block; 
+	 
+} 
+ TITLE { 
+     color:green;  
+     text-decoration: underline  ; 
+     font-weight:bolder; 
+     font-size:20px;
+} 
