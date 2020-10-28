@@ -1,0 +1,54 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script language="JavaScript">
+    function validate() {
+      var name = document.getElementById("name").value;
+      var query = document.getElementById("query").value;
+      var email = document.getElementById("email").value;
+      if (name == null || name == "") {
+        alert("Please enter your name.");
+        return false;
+      }
+      if (email == null || email == "") {
+        alert("Please enter your email.");
+        return false;
+      }
+      if (query == null || query == "") {
+        alert("Please type your query.");
+        return false;
+      }
+      alert('Query sumbitted.');
+      } 
+  </script>
+</head>
+
+  <body>
+    <form id="form1" runat="server">
+      <div class="container">
+        <div class="main">
+          <h2>Submit your queries here.</h2>
+          <form id="form_id" method="post" name="myform">
+            <label>Name :</label>
+            <input type="text" name="name" id="name" />
+            <br><br>
+            <label>Email id :</label>
+            <input type="text" name="email" id="email" />
+            <br><br>
+            <label>Query :</label>
+            <input type="query" name="query" id="query" />
+            <br><br>
+            <input type="button" value="Submit" id="submit" onclick="validate();" />
+          </form>
+        </div>
+      </div>
+    </form>
+
+  </body>
+
+</html>
